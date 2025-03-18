@@ -1,121 +1,115 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const MainContainer= styled.div`
-    display:flex;
-    height:800px;
-    width:1520px;
-    background-color:black;
-    flex-direction:column;
-`;
-
-export const TopContainer= styled.div`
-    display:flex;
-    height:100px;
-    width:1520px;
-    background-color:#f5efeb;
-`;
-
-export const TopContainerLogo=styled.img`
-    height:100px;
-    width:100px;
-`;
-
-export const TopContainerButton=styled.button`
-    width: 140px;
-    height:50px;
-    padding: 10px;
-    margin-top: 25px;
-    margin-left:1200px;
-    background-color: #17467C;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-
-    &:hover {
-        background-color: #222;
-    }
-`;
-
-export const LoginContent=styled.div`
-    display:flex;
-    height:700px;
-    width:1520px;
-    background-color:white;
-`;
-
-export const LogoSection=styled.div`
-    height:700px;
-    width:800px;
-    background-color:white;
-`;
-
-export const LogoSectionImage=styled.img`
-    height:600px;
-    width:600px;
-    margin-top:70px;
-    margin-left:90px;
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(242, 214, 176);
+  margin-left:380px
 `;
 
 export const LoginBox = styled.div`
-    height:700px;
-    width:720px;
-    background-color:#f5efeb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 800px;
+  height:500px;
+  max-width: 90%;
+  background-color:rgb(246, 244, 210);
+  border: 2px solid black;
+ 
+`;
+
+export const FormContainer = styled.div`
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 `;
 
 export const Title = styled.h2`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
-  margin-top:10px
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
   color: black;
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 80%;
 `;
 
 export const Label = styled.label`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   color: black;
 `;
 
 export const Input = styled.input`
   width: 100%;
-  height: 50px;
+  height: 30px;
   border: none;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 18px;
-  margin-top: 10px;
-  background: white;
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background: transparent;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding-left: 5px;
+
+  &:focus {
+    border-bottom: 2px solid #333;
+  }
 `;
 
 export const Button = styled.button`
   width: 100%;
-  padding: 15px;
-  margin-top: 30px;
-  background-color: #17467C;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #444;
   color: white;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0px black;
 
   &:hover {
     background-color: #222;
+    box-shadow: 2px 2px 0px black;
   }
 `;
 
+export const RegisterText = styled.p`
+  margin-top: 15px;
+  font-size: 14px;
+  color: skyblue;
+`;
 
+export const RegisterLink = styled.a`
+  color:rgb(128, 249, 251);
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+`;
